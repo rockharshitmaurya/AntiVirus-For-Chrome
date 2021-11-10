@@ -1,0 +1,37 @@
+{
+    "name":"Anti-Malware",
+    "version":"0.2",
+    "manifest_version":2,
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon":"logo.png"
+    },
+    "icons":{
+        "128":"logo.png"
+    },
+    
+      "permissions": [
+        "tabs",
+        "https://*/*",
+        "http://*/*"
+        
+      ],
+      "background":{
+        "scripts":["./background.js","jquery-3.6.0.min.js"]
+      },
+      "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["contentscript.js"],
+        "run_at": "document_end"    
+        }
+    ], 
+      
+    "description":"© Harshit Maurya"
+   
+      
+    
+}
