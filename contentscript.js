@@ -10,7 +10,6 @@
 //           console.log(`error ${request.status} ${request.statusText}`);
 //         }
 //       };
-// document.body.style.background = 'yellow';
 chrome.runtime.sendMessage({ message: 'fetch_for_me'+document.domain}, () => console.log('cool..'));
         
 // });
