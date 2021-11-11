@@ -19,18 +19,9 @@
       "background":{
         "scripts":["./background.js","jquery-3.6.0.min.js"]
       },
-      "content_scripts": [
-        {
-        "matches": [
-            "http://*/*",
-            "https://*/*"
-            ],
-        "js": ["contentscript.js"],
-        "run_at": "document_end"    
-        }
-    ], 
       
-    "description":"© Harshit Maurya"
+      
+    "description":"© Harshit Maurya "
    
       
     
